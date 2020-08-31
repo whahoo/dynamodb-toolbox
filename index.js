@@ -226,7 +226,7 @@ class Model {
           // It's possible that defaults can purposely return undefined values
           if (hasValue(value)) {
             // Push the update to SET
-            SET.push(mapping.default && !item[field] && !mapping.onUpdate ?
+            SET.push(mapping.default && item[field] === undefined && !mapping.onUpdate ?
               `#${field} = if_not_exists(#${field},:${field})`
               : `#${field} = :${field}`)
             // Add names and values
