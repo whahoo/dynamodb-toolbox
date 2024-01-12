@@ -615,3 +615,4 @@ const hasValue = val => val !== undefined && val !== null
 module.exports = {
   Model
 }
+
