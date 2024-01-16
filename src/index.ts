@@ -8,7 +8,6 @@ import type {
   UpdateOptions,
   EntityItem,
   InferEntityItem,
-  EntityConstructor,
   ParseAttributes
 } from './classes/Entity/types.js'
 
@@ -22,7 +21,6 @@ export type {
   UpdateOptions,
   EntityItem,
   InferEntityItem,
-  EntityConstructor,
   ParseAttributes
 }
 
